@@ -1,7 +1,7 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
+let votingAge=20;
 if(votingAge > 18){
-    let votingAge=20;
     console.log('Ok')
 }
 
@@ -20,7 +20,12 @@ if(videoGames == '$60'){
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-Number('1999') === 1999
+console.log(Number('1999') === 1999);
+
+let string = "1999"
+let number = Number(string);
+console.log(typeof number, number)
+console.log(typeof string, string)
 
 
 
@@ -37,14 +42,20 @@ console.log(multiply(4,16));
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-let myAge = 19;
-let earlyYears = 2;
-earlyYears *= 10.5;
-let laterYears = myAge - 2;
-laterYears *= 4;
-let myAgeInDogYears = earlyYears + laterYears;
-console.log(myAgeInDogYears);
+// let myAge = 19;
+// let earlyYears = 2;
+// earlyYears *= 10.5;
+// let laterYears = myAge - 2;
+// laterYears *= 4;
+// let myAgeInDogYears = earlyYears + laterYears;
+// console.log(myAgeInDogYears);
 
+let myAge=19
+function dogYears(age){
+  var dogAge=age*7;
+  return dogAge;
+}
+console.log(dogYears(myAge));
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -135,7 +146,7 @@ console.log(centimeters + " cm");
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
 var bottles;
-for (counter = 99; counter >= 1; counter = counter - 1) 
+for (counter = 2; counter >= 1; counter = counter - 1) 
 {
     if (counter == 1) {
         bottles = 'bottle';
@@ -169,18 +180,19 @@ for (counter = 99; counter >= 1; counter = counter - 1)
   
 function grades(num1){
   if(num1 >= 90){
-    console.log('A')
+    return 'A'
   }else if(num1 >= 80){
-    console.log('B')
+    return 'B'
   }else if(num1 >= 70){
-    console.log('C')
+    return 'C'
   }else if(num1 >= 60){
-    console.log('D')
+    return 'D'
   }else if(num1 < 60){
-    console.log('F')
+    return 'F'
 } 
-console.log(grades(66));
 }
+console.log(grades(92));
+
   
 
 /************************************************************** Stretch **************************************************************/

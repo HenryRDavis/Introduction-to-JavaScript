@@ -1,24 +1,35 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
-
+if(votingAge > 18){
+    let votingAge=20;
+    console.log('Ok')
+}
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
-
+let videoGames = '$15'
+if(videoGames == '$60'){
+    console.log('Should I save or buy?');
+  } else if(videoGames == '$15'){
+    console.log('Thats a steal!');
+  }
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-
+Number('1999') === 1999
 
 
 
 
 //Task d: Write a function to multiply a*b 
-
+function multiply(a, b){
+    return a*b;
+}
+console.log(multiply(4,16));
 
 
 
@@ -26,8 +37,13 @@
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-
-
+let myAge = 19;
+let earlyYears = 2;
+earlyYears *= 10.5;
+let laterYears = myAge - 2;
+laterYears *= 4;
+let myAgeInDogYears = earlyYears + laterYears;
+console.log(myAgeInDogYears);
 
 
 
@@ -95,8 +111,20 @@
 //60s should be D 
 //and anything below 60 should be F
   
-
-  
+function grades(num1){
+  if(num1 >= 90){
+    console.log('A')
+  }else if(num1 >= 80){
+    console.log('B')
+  }else if(num1 >= 70){
+    console.log('C')
+  }else if(num1 >= 60){
+    console.log('D')
+  }else if(num1 < 60){
+    console.log('F')
+} 
+console.log(grades(83));
+}
   
 
 /************************************************************** Stretch **************************************************************/
